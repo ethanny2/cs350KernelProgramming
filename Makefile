@@ -1,1 +1,1 @@
-obj-y := helloworld.o 
+obj-y := timeP2.o
