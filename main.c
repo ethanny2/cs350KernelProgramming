@@ -12,13 +12,13 @@
 #define _NR_curtime 326
 
 int main(void){
-	while(1){
 		//make the sys call
 		struct timespec test;
 		int ret= syscall(_NR_curtime, &test);
-		/*Check if any sys call errors */
-		printf("nano sec: %ld , secs: %ld\n" , test.tv_nsec, test.tv_sec);
-		sleep(1);
-	}
+		/*Check if any sys call errors print the time again in */
+		unsigned long conversionVal = 1000000000;
+		unsigned long totalNanosecs = (test.tv_nsec) + ( (test.tv_sec)*conversionVal);
+		printf("\n");
+		printf("Total nano secs from user space program: %lu\n" , totalNanosecs);
 	return 0;
 }

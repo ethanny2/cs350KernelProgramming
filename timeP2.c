@@ -12,7 +12,14 @@ asmlinkage long my_xtime(struct timespec *current_time){
 		struct timespec cur = current_kernel_time();
 		current_time->tv_sec = cur.tv_sec;
 		current_time->tv_nsec = cur.tv_nsec;
-		printk(KERN_ALERT "Nanonseconds is: %ld",current_time->tv_nsec);
-		return 0;	
+		/* Convert current time to nanoseconds*/
+		unsigned long conversionVal = 1000000000;
+		unsigned long totalNanosecs = (current_time->tv_nsec) + 
+		((current_time->tv_sec)*conversionVal);
+
+		printk(KERN_ALERT "Current time in Nanonseconds is: %lu", totalNanosecs);
+		return 0;
 	} 
 }
+
+EXPORT_SYMBOL(my_xtime);
