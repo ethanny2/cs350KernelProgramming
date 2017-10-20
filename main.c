@@ -3,8 +3,8 @@
 #include<unistd.h>
 #include<linux/unistd.h>
 #include<sys/time.h>
-#include<stdlib.h>
-#include<unistd.h>
+#include <sys/syscall.h>
+#include<linux/kernel.h>
 #include<sys/unistd.h>
 
 
@@ -14,11 +14,10 @@
 int main(void){
 		//make the sys call
 		struct timespec test;
-		int ret= syscall(_NR_curtime, &test);
+		int ret= syscall(326,&test);
 		/*Check if any sys call errors print the time again in */
 		unsigned long conversionVal = 1000000000;
 		unsigned long totalNanosecs = (test.tv_nsec) + ( (test.tv_sec)*conversionVal);
-		printf("\n");
 		printf("Total nano secs from user space program: %lu\n" , totalNanosecs);
 	return 0;
 }

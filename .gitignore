@@ -1,5 +1,4 @@
-/built-in.o
-/a.out
-/modules.builtin
-/modules.order
-/timeP2.o
+*built-in
+*modules
+*timeP2.o
+
