@@ -2,4 +2,6 @@
 *.order
 *.o
 *.build
+*.cmd
+*.swp
 
