@@ -1,0 +1,6 @@
+*.cmd
+*.order
+*.o
+*.built-in
+*.swp
+
