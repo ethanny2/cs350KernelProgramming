@@ -1,4 +1,5 @@
-*built-in
-*modules
-*timeP2.o
+*.built-in
+*.order
+*.o
+*.build
 
