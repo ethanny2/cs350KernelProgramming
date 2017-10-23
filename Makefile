@@ -1,8 +1,13 @@
 
-obj-m += timeModule.o
+obj-m += mytime.o
+KDIR := /lib/modules/$(shell uname -r)/build
+PWD := $(shell pwd)
+
+CC := $(CROSS_COMPILE)gcc
 
 all:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
-
+	$(MAKE) -C $(KDIR) M=${shell pwd} modules
+	
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+	-$(MAKE) -C $(KDIR) M=${shell pwd} clean || true
+	-rm *.o *.ko *.mod.{c,o} modules.order Module.symvers || true
