@@ -1,12 +1,19 @@
-* 5a14d5a : Final commit of assignment 2. No unecessary files included
-* ae56078 : Reset of directory
-* a1d712c : Fixed git ignore
-* b6f28c6 : New ignore file.
-* b6423a5 : Push of all needed files.
-* 00caba3 : Updated ignore file.
-* 85c962c : Fixed mistakes with system configuration. I figured out the printk statements go not to the same place printf statements go. You can see them with dmesg.
-* 18900b8 : Commit code, it just worked when but I guess now it doesn't even though I didn't change the kerenel. Maybe because I moved some files around messed something up
-* 7286b12 : Pushing the ignore file
-* 6c893d5 : Recompiled kernel with appropriate syscall in table and inmplemented the function, does not seem to work because the print message from the kernel is never displayed.
-* f6f4efa : Second commit have a kernel call test and a main test to test in a userspace. Currently doesn't work.
-* bc19160 : First commit
+d7efdd3 was root, 2 minutes ago, message: Second to last commit, need to include text file that answers the questions
+bdb19c2 was root, 4 minutes ago, message: Final commit of git ignore, makes it so that only part C files are included in this
+15ec957 was root, 14 minutes ago, message: Updated ignore to take out project2 information
+54d0102 was root, 3 hours ago, message: Working files of part C
+43f9482 was root, 8 hours ago, message: Commiting with a boilerplate code for a misc char device that successfully registered and created a folder in the /dev directory. mytime_try1.c is my first attempt at creating a major number char device, it didn't work
+affac35 was root, 30 hours ago, message: First hello world working module
+05f2543 was root, 4 days ago, message: Added log file
+5a14d5a was root, 4 days ago, message: Final commit of assignment 2. No unecessary files included
+ae56078 was root, 4 days ago, message: Reset of directory
+a1d712c was root, 4 days ago, message: Fixed git ignore
+b6f28c6 was root, 4 days ago, message: New ignore file.
+b6423a5 was root, 4 days ago, message: Push of all needed files.
+00caba3 was root, 4 days ago, message: Updated ignore file.
+85c962c was root, 4 days ago, message: Fixed mistakes with system configuration. I figured out the printk statements go not to the same place printf statements go. You can see them with dmesg.
+18900b8 was root, 13 days ago, message: Commit code, it just worked when but I guess now it doesn't even though I didn't change the kerenel. Maybe because I moved some files around messed something up
+7286b12 was root, 13 days ago, message: Pushing the ignore file
+6c893d5 was root, 2 weeks ago, message: Recompiled kernel with appropriate syscall in table and inmplemented the function, does not seem to work because the print message from the kernel is never displayed.
+f6f4efa was root, 2 weeks ago, message: Second commit have a kernel call test and a main test to test in a userspace. Currently doesn't work.
+bc19160 was root, 2 weeks ago, message: First commit
